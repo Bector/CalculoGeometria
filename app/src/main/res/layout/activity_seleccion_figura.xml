@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SeleccionFigura">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Seleccione la figura a calcular"
+    android:gravity="center"
+    android:textSize="36dp"></TextView>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdGrupo">
+
+        <RadioButton
+            android:id="@+id/rdCuadrado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cuadrado"></RadioButton>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rectangulo"
+            android:id="@+id/rdRectangulo"></RadioButton>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Circulo"
+            android:id="@+id/rbCirculo"></RadioButton>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rombo"
+            android:id="@+id/rbRombo"></RadioButton>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Triangulo Equilátero"
+            android:id="@+id/rbTEquilatero"></RadioButton>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Triangulo Isósceles"
+            android:id="@+id/rbTIsósceles"></RadioButton>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Triangulo Escaleno"
+            android:id="@+id/rbTEscaleno"></RadioButton>
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSeleccionar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnSeleccionar"
+        android:text="Seleccionar" />
+</LinearLayout>
